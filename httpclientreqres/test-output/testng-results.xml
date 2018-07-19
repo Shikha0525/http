@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" total="15" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17131" started-at="2018-07-19T06:28:02Z" finished-at="2018-07-19T06:28:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17131" started-at="2018-07-19T06:28:02Z" finished-at="2018-07-19T06:28:19Z">
+      <class name="httpclientreqres.NewTest">
+        <test-method status="PASS" signature="test01ListUsers()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test01ListUsers" duration-ms="1489" started-at="2018-07-19T11:58:02Z" finished-at="2018-07-19T11:58:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01ListUsers -->
+        <test-method status="PASS" signature="test02SingleUser()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test02SingleUser" duration-ms="936" started-at="2018-07-19T11:58:03Z" finished-at="2018-07-19T11:58:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02SingleUser -->
+        <test-method status="PASS" signature="test03SingleUserNotFound()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test03SingleUserNotFound" duration-ms="887" started-at="2018-07-19T11:58:04Z" finished-at="2018-07-19T11:58:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03SingleUserNotFound -->
+        <test-method status="PASS" signature="test04ListResource()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test04ListResource" duration-ms="745" started-at="2018-07-19T11:58:05Z" finished-at="2018-07-19T11:58:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test04ListResource -->
+        <test-method status="PASS" signature="test05SingleResource()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test05SingleResource" duration-ms="943" started-at="2018-07-19T11:58:06Z" finished-at="2018-07-19T11:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05SingleResource -->
+        <test-method status="PASS" signature="test06SingleResourceNotFound()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test06SingleResourceNotFound" duration-ms="915" started-at="2018-07-19T11:58:07Z" finished-at="2018-07-19T11:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test06SingleResourceNotFound -->
+        <test-method status="FAIL" signature="test07Create()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test07Create" duration-ms="951" started-at="2018-07-19T11:58:07Z" finished-at="2018-07-19T11:58:08Z">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<201> but was:<200>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<201> but was:<200>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at httpclientreqres.NewTest.test07Create(NewTest.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test07Create -->
+        <test-method status="PASS" signature="test08Update()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test08Update" duration-ms="877" started-at="2018-07-19T11:58:08Z" finished-at="2018-07-19T11:58:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test08Update -->
+        <test-method status="PASS" signature="test09Patch()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test09Patch" duration-ms="945" started-at="2018-07-19T11:58:09Z" finished-at="2018-07-19T11:58:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test09Patch -->
+        <test-method status="FAIL" signature="test10Delete()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test10Delete" duration-ms="925" started-at="2018-07-19T11:58:10Z" finished-at="2018-07-19T11:58:11Z">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<204> but was:<200>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<204> but was:<200>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at httpclientreqres.NewTest.test10Delete(NewTest.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10Delete -->
+        <test-method status="FAIL" signature="test11RegisterSuccessful()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test11RegisterSuccessful" duration-ms="958" started-at="2018-07-19T11:58:11Z" finished-at="2018-07-19T11:58:12Z">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<204> but was:<200>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<204> but was:<200>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at httpclientreqres.NewTest.test11RegisterSuccessful(NewTest.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11RegisterSuccessful -->
+        <test-method status="FAIL" signature="test12RegisterUnsuccessful()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test12RegisterUnsuccessful" duration-ms="904" started-at="2018-07-19T11:58:12Z" finished-at="2018-07-19T11:58:13Z">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<400> but was:<200>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<400> but was:<200>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at httpclientreqres.NewTest.test12RegisterUnsuccessful(NewTest.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12RegisterUnsuccessful -->
+        <test-method status="PASS" signature="test13LoginSuccessful()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test13LoginSuccessful" duration-ms="873" started-at="2018-07-19T11:58:13Z" finished-at="2018-07-19T11:58:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13LoginSuccessful -->
+        <test-method status="FAIL" signature="test14LoginUnSuccessful()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test14LoginUnSuccessful" duration-ms="848" started-at="2018-07-19T11:58:14Z" finished-at="2018-07-19T11:58:15Z">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<400> but was:<200>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<400> but was:<200>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at httpclientreqres.NewTest.test14LoginUnSuccessful(NewTest.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14LoginUnSuccessful -->
+        <test-method status="PASS" signature="test15DelayedResponse()[pri:0, instance:httpclientreqres.NewTest@1d057a39]" name="test15DelayedResponse" duration-ms="3884" started-at="2018-07-19T11:58:15Z" finished-at="2018-07-19T11:58:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test15DelayedResponse -->
+      </class> <!-- httpclientreqres.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
